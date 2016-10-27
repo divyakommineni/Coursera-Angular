@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('ShoppingListApp', [])
+  angular.module('ShoppingListCheckOffApp', [])
   .controller('ToBuyController', ToBuyController)
   .controller('AlreadyBoughtController', AlreadyBoughtController)
   .service('ShoppingListCheckOffService', ShoppingListCheckOffService);
@@ -19,6 +19,7 @@
       if(list1.items.length == 0)
       {
        list1.emptyMessage = "Everything Bought!";
+
       }
     };
   }
