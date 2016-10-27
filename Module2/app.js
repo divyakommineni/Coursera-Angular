@@ -10,7 +10,6 @@
   ToBuyController.$inject = ['ShoppingListCheckOffService'];
   function ToBuyController(ShoppingListCheckOffService) {
     var list1 = this;
-    //var list1 = shoppingList.getToBuyItems();
 
     list1.items = ShoppingListCheckOffService.getToBuyItems();
 
@@ -56,7 +55,6 @@
     ];
 
     var boughtItems = [];
-    service.AlreadyBoughtemptyMessage = "Nothing Bought Yet";
     service.boughtItem = function (itemIndex) {
         var item = {
           name: toBuyitems[itemIndex].name,
@@ -64,9 +62,6 @@
         };
         toBuyitems.splice(itemIndex, 1);
         boughtItems.push(item);
-        if(boughtItems.length != 0){
-            service.AlreadyBoughtemptyMessage = "";
-        }
     };
 
     service.getToBuyItems = function () {
