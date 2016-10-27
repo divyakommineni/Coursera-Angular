@@ -1,0 +1,21 @@
+body {
+  font-size: 1.2em;
+}
+#list1, #list2 {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+}
+
+#list2.button, #list1.button{
+  margin-left: 6px;
+}
+
+.button {
+  color: green;
+}
+
+.emptyMessage {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2em;
+}
